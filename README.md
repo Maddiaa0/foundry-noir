@@ -1,6 +1,6 @@
 # Foundry x Noir
 
-A [foundry](https://github.com/foundry-rs/foundry) library for working with [huff](https://github.com/huff-language/huff-rs) contracts. Take a look at our [project template](https://github.com/huff-language/huff-project-template) to quickly get up to speed using this library.
+A [foundry](https://github.com/foundry-rs/foundry) library for working with [noir](https://github.com/noir-lang/noir) contracts. Take a look at our [project template](https://github.com/cheethas/noirplate) to quickly get up to speed using this library.
 
 ## Installing
 
