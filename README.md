@@ -21,7 +21,7 @@ forge install cheethas/foundry-noir
 The NoirProver is a Solidity library that takes a path to a noir project and generates a hex proof given a series of inputs. To use it, simply import it into your file by doing:
 
 ```js
-import { NoirProver } from "foundry-huff/Noir.sol";
+import { NoirProver } from "foundry-noir/Noir.sol";
 ```
 
 This library will not generate the verifier contract for you, however there is a sister project `noirplate` that has a script you can run after each of your circuit changes to generate a new verifier.
