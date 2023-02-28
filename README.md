@@ -1,5 +1,5 @@
-# Nargo foundry
+# Foundry Noir
 
-nargo --program-dir <path> p
+(wip)
 
-TODO: allow public inputs to be supplied from the command line
+Allow for testing noir programs from within foundry

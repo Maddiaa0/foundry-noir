@@ -1,9 +1,6 @@
-// TODO: modify this to get proofs from noir instead
-
 import {Vm} from "forge-std/Vm.sol";
 import {strings} from "stringutils/strings.sol";
 import {Strings} from "@openzeppelin/contracts/utils/Strings.sol";
-import "forge-std/console.sol";
 
 contract NoirProver {
     using strings for *;
@@ -60,7 +57,6 @@ contract NoirProver {
 
     function generate_proof() public returns (bytes memory) {
         // Craft an ffi call to the prover binary
-        // TODO: allow the user to specify this program dir as a string
         string memory project_root = vm.projectRoot();
         string[] memory input_params = get_inputs();
         
@@ -68,7 +64,6 @@ contract NoirProver {
         string[] memory ffi_cmds = new string[](4 +  input_params.length);
         ffi_cmds[0] = "nargo";
         ffi_cmds[1] = "--program-dir";
-        // TODO: take this in as an input
         ffi_cmds[2] = nargo_project_path;
         ffi_cmds[3] = "prove";
         for (uint256 i; i < input_params.length; i++) {
